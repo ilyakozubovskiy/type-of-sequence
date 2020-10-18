@@ -18,7 +18,7 @@ namespace Numbers.Tests
         [TestCase(0L, ExpectedResult = null)]
         [TestCase(1L, ExpectedResult = null)]
         [TestCase(-1L, ExpectedResult = null)]
-        public ComparisonSigns? GetTypeComparisonSigns_Test(long number) => number.GetTypeComparisonSigns();
+        public ComparisonSigns? GetTypeComparisonSigns_Tests(long number) => number.GetTypeComparisonSigns();
 
         [TestCase(123456789L, ExpectedResult = "Strictly Increasing.")]
         [TestCase(long.MinValue, ExpectedResult = "Unordered.")]
@@ -31,6 +31,6 @@ namespace Numbers.Tests
         [TestCase(0L, ExpectedResult = "One digit number.")]
         [TestCase(1L, ExpectedResult = "One digit number.")]
         [TestCase(-1L, ExpectedResult = "One digit number.")]
-        public string GetTypeOfDigitsSequence_Test(long number) => number.GetTypeOfDigitsSequence();
+        public string GetTypeOfDigitsSequence_Tests(long number) => number.GetTypeOfDigitsSequence();
     }
 }
