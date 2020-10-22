@@ -1,7 +1,10 @@
-﻿using System;
+using System;
 
 namespace Numbers
 {
+    /// <summary>
+    /// Specifies comparison signs: less than, more than and equals.
+    /// </summary>
     [Flags]
     public enum ComparisonSigns
     {
